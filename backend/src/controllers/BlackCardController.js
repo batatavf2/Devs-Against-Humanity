@@ -5,10 +5,11 @@ module.exports = {
         const cards = await BlackCard.find()
         return res.json(cards);
     },
-    async store(req ,res) {
-        const { text, watermark } = req.body
+    async store(req, res) {
+        const { text, watermark, draw } = req.body
 
         const card = await BlackCard.create({
+            draw,
             text,
             watermark
         });
