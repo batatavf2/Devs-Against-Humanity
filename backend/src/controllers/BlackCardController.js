@@ -3,7 +3,7 @@ const BlackCard = require('../models/BlackCard')
 module.exports = {
     async index(req, res) {
         const cards = await BlackCard.find()
-        return res.json(cards);
+        return cards;
     },
     async store(req, res) {
         const { text, watermark, draw } = req.body

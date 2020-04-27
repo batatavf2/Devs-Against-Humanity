@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 const sqlite3 = require('sqlite3')
 const WhiteCard = require('../models/WhiteCard')
 const BlackCard = require('../models/BlackCard')
